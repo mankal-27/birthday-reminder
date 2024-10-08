@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes sparkle {
+  0%, 100% {
+    text-shadow: 0 0 5px #ff9, 0 0 10px #ff9, 0 0 15px #f09;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff3, 0 0 20px #ff3, 0 0 30px #f93;
+  }
+}
+
+.sparkle {
+  background: linear-gradient(90deg, #ff9, #f09, #ff3);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: sparkle 1.5s infinite alternate;
+}
